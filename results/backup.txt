@@ -1,0 +1,3 @@
+line 1
+line 2
+i love dogs (line 3)
