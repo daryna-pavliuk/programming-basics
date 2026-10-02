@@ -1,0 +1,6 @@
+grep -c '>' sequences.fasta #count headers - number of sequences
+grep '>' sequences.fasta > /Users/merndrs/kse/programming-basics/results/headers.txt #save to results/headers.txt
+grep -c -v ">" sequences.fasta #how many lines are not in headers
+grep -c "Homo sapiens" sequences.fasta #how many sequences come from Homo sapiens
+grep ">" sequences.fasta | head -n 2 #first 2 headers
+grep ">" sequences.fasta | cut -d " " -f 4,5
