@@ -1,5 +1,6 @@
-seq = 'AATTCTGTAGCTGGTACCTATATATGCCCGTA'
+seq = input()
 print('Sequence length:', len(seq))
 g = int(seq.count('G'))
 c = int(seq.count('C'))
-print('GC content:', (g+c)/len(seq)*100, '%')
+gc = (g+c)/len(seq)*100
+print('GC content:', round(gc, 2), '%')
