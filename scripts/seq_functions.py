@@ -16,7 +16,7 @@ def is_usable(seq, min_length = 30):
 
 def first_atg(seq):
     atg = seq.find("ATG")
-    if atg > 0:
+    if atg >= 0:
         return(atg) 
     else:
         return("not found")
